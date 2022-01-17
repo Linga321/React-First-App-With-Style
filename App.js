@@ -15,7 +15,7 @@ const mediaArray = [
   {
     'key': '0',
     'title': 'Title 1',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales enim eget leo condimentum vulputate. Sed lacinia consectetur fermentum. Vestibulum lobortis purus id nisi mattis posuere. Praesent sagittis justo quis nibh ullamcorper, eget elementum lorem consectetur. Pellentesque eu consequat justo, eu sodales eros.',
+    'description': 'Lorem ipsum dolor sit amet,  Pellentesque eu consequat justo, eu sodales eros.',
     'thumbnails': {
       w160: 'http://placekitten.com/160/161',
     },
@@ -24,7 +24,7 @@ const mediaArray = [
   {
     'key': '1',
     'title': 'Title 2',
-    'description': 'Donec dignissim tincidunt nisl, non scelerisque massa pharetra ut. Sed vel velit ante. Aenean quis viverra magna. Praesent eget cursus urna. Ut rhoncus interdum dolor non tincidunt. Sed vehicula consequat facilisis. Pellentesque pulvinar sem nisl, ac vestibulum erat rhoncus id. Vestibulum tincidunt sapien eu ipsum tincidunt pulvinar. ',
+    'description': ' ac vestibulum erat rhoncus id. Vestibulum tincidunt sapien eu ipsum tincidunt pulvinar. ',
     'thumbnails': {
       w160: 'http://placekitten.com/160/164',
     },
@@ -33,7 +33,7 @@ const mediaArray = [
   {
     'key': '2',
     'title': 'Title 3',
-    'description': 'Phasellus imperdiet nunc tincidunt molestie vestibulum. Donec dictum suscipit nibh. Sed vel velit ante. Aenean quis viverra magna. Praesent eget cursus urna. Ut rhoncus interdum dolor non tincidunt. Sed vehicula consequat facilisis. Pellentesque pulvinar sem nisl, ac vestibulum erat rhoncus id. ',
+    'description': 'Phasellus imperdiet nunc tincidunt molestie Pellentesque pulvinar sem nisl, ac vestibulum erat rhoncus id. ',
     'thumbnails': {
       w160: 'http://placekitten.com/160/167',
     },
@@ -63,7 +63,7 @@ const App = () => {
           style={styles.settings}
         />
 
-        <Text style={styles.hello}>Homeless Kittens</Text>
+        <Text style={styles.main_title}>Homeless Kittens</Text>
       </View>
 
       <View style={styles.infoArea}>
@@ -87,7 +87,7 @@ const App = () => {
       </View>
 
       <View style={styles.footerArea}>
-        <Text style={styles.footerText}>Cat Page by Maksim Pasnitsenko</Text>
+        <Text style={styles.footerText}>Cat Page by Gaja</Text>
       </View>
     </View>
   );
@@ -118,13 +118,13 @@ const styles = StyleSheet.create({
     top: 10,
     right: 6,
   },
-  hello: {
+  main_title: {
     position: 'absolute',
     bottom: 20,
-    right: 130,
+    right: 150,
     borderTopRightRadius: 30,
     borderBottomRightRadius: 30,
-    padding: 10,
+    padding: 0,
     paddingLeft: 140,
     color: 'rgb(00,253,228)',
     fontWeight: 'bold',
@@ -146,11 +146,11 @@ const styles = StyleSheet.create({
     borderColor: 'black',
   },
   roundedImage: {
-    marginTop: 60,
+    marginTop: 20,
     flex: 2,
     width: 40,
     height: 100,
-    borderRadius: 100 / 2,
+    borderBottomLeftRadius: 30,
     overflow: 'hidden',
     borderWidth: 2,
     borderColor: 'navy',
